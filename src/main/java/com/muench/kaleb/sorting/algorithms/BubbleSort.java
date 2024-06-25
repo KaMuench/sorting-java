@@ -1,11 +1,11 @@
-package com.muench.kaleb.mergesort.sorting.algorithms;
+package com.muench.kaleb.sorting.algorithms;
 
-import com.muench.kaleb.mergesort.ui.CallBack;
+import com.muench.kaleb.ui.CallBack;
 
 /**
  * Implementation of the bubblesort algorithm
  */
-public class BubbleSort implements Sort{
+public class BubbleSort <T extends Comparable> implements Sort<T> {
 
     // CallBack interface to update the visualizer
     CallBack callBack;
@@ -24,7 +24,7 @@ public class BubbleSort implements Sort{
     }
 
     @Override
-    public <T extends Comparable> T[] sort(T[] list) {
+    public T[] sort(T[] list) {
         T[] newArray = list.clone();
 
         for(int i=0;i<newArray.length;i++){

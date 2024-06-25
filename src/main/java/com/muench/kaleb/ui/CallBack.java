@@ -1,4 +1,4 @@
-package com.muench.kaleb.mergesort.ui;
+package com.muench.kaleb.ui;
 
 /**
  * Interface for updating the UI

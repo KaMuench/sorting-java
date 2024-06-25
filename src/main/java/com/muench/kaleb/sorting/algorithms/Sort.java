@@ -1,15 +1,14 @@
-package com.muench.kaleb.mergesort.sorting.algorithms;
+package com.muench.kaleb.sorting.algorithms;
 
 /**
  * Interface for sorting algorithms
 
  */
-public interface Sort {
+public interface Sort  <T extends Comparable>{
      /**
       * Sorts a list of elements
       * @param list an array of a generic type
       * @return the sorted array
-      * @param <T> any comparable type
       */
-     <T extends Comparable> T[] sort(T[] list);
+     T[] sort(T[] list);
 }
