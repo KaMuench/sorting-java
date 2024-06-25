@@ -77,7 +77,7 @@ public class ColumnVisualizer extends JFrame {
         this.dataTimer.start();
         columnPanel.startTimer();
         new Thread(() -> {
-            bubbleSort.sort(data.cloneData());
+            bubble.sort(data.cloneData());
             isSorted.set(true);
         }).start();
     }
